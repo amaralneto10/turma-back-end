@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+:root {
+    --cor1: #EF7025;
+    --cor2: #149699;
+}
+
+body {
+    font-size: 62.2%;
+}
+
+/* FITA-CIMA */
+
+.fita-cima {
+    background: #EF7025;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fita-cima h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.nav-alta ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-alta ul li a i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: white;
+    transition: .3s;
+}
+
+
+.nav-alta ul li a i:hover {
+    color: rgba(255, 255, 255, 0.658);
+    transform: scale(1.2);
+}
+
+/* FITA-COLORIDA-CIMA */
+.fita-colorida-cima {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.fita-colorida-cima .fita1 {
+    border: 2px solid #EF7025;
+    width: 25%;
+}
+
+.fita-colorida-cima .fita2 {
+    border: 2px solid #efc325;
+    width: 25%;
+}
+
+.fita-colorida-cima .fita3 {
+    border: 2px solid #149699;
+    width: 25%;
+}
+
+.fita-colorida-cima .fita4 {
+    border: 2px solid #ff0000;
+    width: 25%;
+}
+
+.header {
+    background: url(../imagens/Fundo\ Papel\ Amassado.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h1 {
+    text-align: center;
+    line-height: 1.3rem;
+    color: #149699;
+}
+
+.header span {
+    color: #EF7025;
+}
+
+header a img {
+    width: 15rem;
+}
+
+/* FITA BAIXA HEADER */
+.fita-baixa-header {
+    background: #149699;
+    padding: 1rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.718);
+}
+.fita-baixa-header ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fita-baixa-header ul li a {
+    font-size: 1rem;
+    color: white;
+}
+
+/* MENU SLIDE */
+
+.menu-lista {
+    position: absolute;
+    background: #149699;
+    display: none;
+    padding: 1rem 0 1rem .2rem;
+}
+
+
+.menu-lista a {
+    display: block;
+
+}
+
+.menu-lista a:hover {
+    background: white;
+    color: #149699;
+}
+
+.menu:hover .menu-lista  {
+    display: block;
+}
+
+/* BREAKPOINTS */
+
+@media screen and (max-width: 600px) {
+    .header {
+        background: red;
+    }
+
+    .fita-cima h1 {
+        font-size: 1rem;
+    }
+    
+    .nav-alta ul li a i {
+        font-size: 1.2rem;
+    }
+
+    .header img {
+        width: 9rem;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    /* CONFIG ATÉ 600PX - INICIO FIM */
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio .mural-comunica h1 {
+        background: #149699;
+        color: white;
+        font-weight: 700;
+        margin-top: 1rem;
+        padding: .5rem;
+        border-radius: .7rem;
+    }
+
+    /* CONFIG ATÉ 600PX - INICIO FIM */
+
+    /* CONFIG ATÉ 600PX - BLOG */
+
+    .blog {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 0 auto;
+    }
+
+    .blog .blog-noticias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto 1rem auto;
+    }
+
+    .blog .blog-noticias img {
+        width: 10rem;
+        border-radius: 1rem;
+    }
+
+    .blog .blog-noticias h1 {
+        font-size: 1rem;
+        text-align: center;
+        width: 15rem;
+    }
+
+    .blog .blog-noticias i {
+        color: #313131;
+    }
+
+    .blog .blog-noticias a {
+        color: white;
+        background: #149699;
+        font-size: .8rem;
+        font-weight: 900;
+        margin: .5rem auto 0 auto;
+        padding: .5rem;
+        border-radius: 1rem;
+    }
+
+    .blog .blog-noticias a:hover {
+        background: #EF7025;
+    }
+
+       /* CONFIG ATÉ 600PX - BLOG FIM */
+}
