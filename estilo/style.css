@@ -146,7 +146,7 @@ header a img {
 
 @media screen and (max-width: 600px) {
     .header {
-        background: red;
+        background: transparent;
     }
 
     .fita-cima h1 {
